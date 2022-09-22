@@ -1,0 +1,2 @@
+. ./startBoot.sh
+. ./startAllMpc.sh
