@@ -1536,3 +1536,36 @@
 18:02:08.799110 table@compaction committed F-1 S+854B Ke·0 D·4 T·41.724803ms
 18:02:08.799237 table@remove removed @335
 18:02:08.799289 table@remove removed @334
+=============== Nov 22, 2022 (PST) ===============
+19:03:23.799119 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:03:23.802325 db@open opening
+19:03:23.803484 version@stat F·[] S·0B[] Sc·[]
+19:03:23.804736 db@janitor F·2 G·0
+19:03:23.804763 db@open done T·2.420444ms
+=============== Nov 27, 2022 (PST) ===============
+20:33:49.894983 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:33:50.003784 version@stat F·[] S·0B[] Sc·[]
+20:33:50.003802 db@open opening
+20:33:50.003850 journal@recovery F·1
+20:33:50.007904 journal@recovery recovering @1
+20:33:50.010232 version@stat F·[] S·0B[] Sc·[]
+20:33:50.012691 db@janitor F·2 G·0
+20:33:50.012733 db@open done T·8.92517ms
+=============== Nov 27, 2022 (PST) ===============
+20:36:59.128534 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:36:59.128684 version@stat F·[] S·0B[] Sc·[]
+20:36:59.128691 db@open opening
+20:36:59.128726 journal@recovery F·1
+20:36:59.131122 journal@recovery recovering @2
+20:36:59.133650 version@stat F·[] S·0B[] Sc·[]
+20:36:59.136201 db@janitor F·2 G·0
+20:36:59.136239 db@open done T·7.539147ms
+=============== Nov 27, 2022 (PST) ===============
+20:43:14.794885 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:43:14.795034 version@stat F·[] S·0B[] Sc·[]
+20:43:14.795041 db@open opening
+20:43:14.795076 journal@recovery F·1
+20:43:14.840150 journal@recovery recovering @4
+20:43:14.840949 version@stat F·[] S·0B[] Sc·[]
+20:43:14.853617 db@janitor F·2 G·0
+20:43:14.853697 db@open done T·58.648287ms

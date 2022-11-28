@@ -9793,3 +9793,39 @@
 18:00:09.208581 table@compaction committed F-1 S-37KiB Ke·0 D·5106 T·17.561661ms
 18:00:09.208982 table@remove removed @7477
 18:00:09.209105 table@remove removed @7476
+=============== Nov 22, 2022 (PST) ===============
+19:03:28.311478 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:03:28.314341 db@open opening
+19:03:28.316207 version@stat F·[] S·0B[] Sc·[]
+19:03:28.317467 db@janitor F·2 G·0
+19:03:28.317500 db@open done T·3.121866ms
+=============== Nov 27, 2022 (PST) ===============
+20:33:52.400747 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:33:52.425645 version@stat F·[] S·0B[] Sc·[]
+20:33:52.425667 db@open opening
+20:33:52.425756 journal@recovery F·1
+20:33:52.426401 journal@recovery recovering @1
+20:33:52.428950 memdb@flush created L0@2 N·2 S·225B "n:\"..ing,v2":"version,v1"
+20:33:52.429447 version@stat F·[1] S·225B[225B] Sc·[0.25]
+20:33:52.431473 db@janitor F·3 G·0
+20:33:52.431524 db@open done T·5.85128ms
+=============== Nov 27, 2022 (PST) ===============
+20:37:01.302579 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:37:01.302674 version@stat F·[1] S·225B[225B] Sc·[0.25]
+20:37:01.302681 db@open opening
+20:37:01.302715 journal@recovery F·1
+20:37:01.306823 journal@recovery recovering @3
+20:37:01.313905 memdb@flush created L0@5 N·1 S·205B "n:\"..ing,v4":"n:\"..ing,v4"
+20:37:01.314375 version@stat F·[2] S·430B[430B] Sc·[0.50]
+20:37:01.324742 db@janitor F·4 G·0
+20:37:01.324764 db@open done T·22.078341ms
+=============== Nov 27, 2022 (PST) ===============
+20:43:17.258009 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:43:17.258189 version@stat F·[2] S·430B[430B] Sc·[0.50]
+20:43:17.258202 db@open opening
+20:43:17.258261 journal@recovery F·1
+20:43:17.262618 journal@recovery recovering @6
+20:43:17.263756 memdb@flush created L0@8 N·1 S·205B "n:\"..ing,v6":"n:\"..ing,v6"
+20:43:17.272086 version@stat F·[3] S·635B[635B] Sc·[0.75]
+20:43:17.273991 db@janitor F·5 G·0
+20:43:17.274022 db@open done T·15.81367ms
