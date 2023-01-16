@@ -5,10 +5,13 @@ j=0
 mywkAddrList=$(cat ../conf/groupConf/WorkingAddList | awk '{print $1}')
 echo "mywkAddrList:"${mywkAddrList}
 
+rm ../conf/cfg/wkAddrList
 for wa in  ${mywkAddrList}
 do
 	wkAddrList[$j]=${wa}
 	let j++
+	# 用新的nodeKey组装出新的nodeKeyList
+	echo "${wa}" >> ../conf/cfg/wkAddrList
 done
 
 echo $wa
