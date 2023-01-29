@@ -41,3 +41,39 @@
 18:31:49.739544 version@stat F·[1] S·255B[255B] Sc·[0.25]
 18:31:49.865183 db@janitor F·3 G·0
 18:31:49.865319 db@open done T·129.459101ms
+=============== Jan 29, 2023 (CST) ===============
+10:52:17.857318 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:52:18.039930 version@stat F·[1] S·255B[255B] Sc·[0.25]
+10:52:18.039968 db@open opening
+10:52:18.040090 journal@recovery F·1
+10:52:18.041211 journal@recovery recovering @9
+10:52:19.524379 version@stat F·[1] S·255B[255B] Sc·[0.25]
+10:52:19.558185 db@janitor F·3 G·0
+10:52:19.558279 db@open done T·1.518302829s
+=============== Jan 29, 2023 (CST) ===============
+11:16:09.536610 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:16:09.536749 version@stat F·[1] S·255B[255B] Sc·[0.25]
+11:16:09.536756 db@open opening
+11:16:09.536791 journal@recovery F·1
+11:16:09.537441 journal@recovery recovering @11
+11:16:09.549388 memdb@flush created L0@13 N·7 S·272B "n:\"..ail,v11":"n:\"..ing,v6"
+11:16:09.550746 version@stat F·[2] S·527B[527B] Sc·[0.50]
+11:16:09.560703 db@janitor F·4 G·0
+11:16:09.560753 db@open done T·23.992046ms
+=============== Jan 29, 2023 (CST) ===============
+11:32:47.580638 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:32:47.580819 version@stat F·[2] S·527B[527B] Sc·[0.50]
+11:32:47.580829 db@open opening
+11:32:47.580874 journal@recovery F·1
+11:32:47.581680 journal@recovery recovering @14
+11:32:47.585621 memdb@flush created L0@16 N·2 S·227B "n:\"..ail,v15":"n:\"..ing,v14"
+11:32:47.586306 version@stat F·[3] S·754B[754B] Sc·[0.75]
+11:32:47.601490 db@janitor F·5 G·0
+11:32:47.601554 db@open done T·20.719129ms
+11:37:11.757658 table@compaction L0·3 -> L1·0 S·754B Q·83
+11:37:11.769406 table@build created L1@19 N·4 S·261B "n:\"..ail,v15":"version,v1"
+11:37:11.769463 version@stat F·[0 1] S·261B[0B 261B] Sc·[0.00 0.00]
+11:37:11.780220 table@compaction committed F-2 S-493B Ke·0 D·9 T·22.501151ms
+11:37:11.780296 table@remove removed @16
+11:37:11.780370 table@remove removed @13
+11:37:11.780396 table@remove removed @2
