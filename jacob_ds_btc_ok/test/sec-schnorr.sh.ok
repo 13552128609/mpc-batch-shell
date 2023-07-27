@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for (( i = 0; i<$1; ++i)); do
+    echo "storeman.signByApprove({pk:'0x501f1e8c8e135e2311397ac1812b59e0736cc8ec37765a8945dfcbf831e0d4bc0b99db98637d628dacb978239e683a30852558bb2bb0029fb10e61f10883010d',curve:'0x00',alg:'0x01',hashData:['0x5c37529010e2f7a9ec225e516e6b79478f117cdf45d1796cd034d48b901d8d41','0x5d822a3b0c7e531cef44e1c8027d29c8443bc822fa7fc22f9e4ddef3c69356eb'],rawData:['0x5c37529010e2f7a9ec225e516e6b79478f117cdf45d1796cd034d48b901d8d41','0x5d822a3b0c7e531cef44e1c8027d29c8443bc822fa7fc22f9e4ddef3c69356eb'],extern:'jacob'})" | ../admin/bk.sh 1  &
+done
