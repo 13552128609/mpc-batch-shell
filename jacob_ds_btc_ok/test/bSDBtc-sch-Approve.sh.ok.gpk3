@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for (( i = 1; i<9; ++i)); do
+echo "storeman.approve([{pk:'0x80b227a6817284253571d56b069cd8d0b83a0bfcc6d223d1ed9059490fa925b774f9249f32e7e3ce59939389d369031a9cd708ad968c2804f19909c0e8bffdbf',curve:'0x00',alg:'0x02',hashData:['0x5c37529010e2f7a9ec225e516e6b79478f117cdf45d1796cd034d48b901d8d41','0x5d822a3b0c7e531cef44e1c8027d29c8443bc822fa7fc22f9e4ddef3c69356eb'],rawData:['0x5c37529010e2f7a9ec225e516e6b79478f117cdf45d1796cd034d48b901d8d41','0x5d822a3b0c7e531cef44e1c8027d29c8443bc822fa7fc22f9e4ddef3c69356eb'],extern:'jacob'}])" | ../admin/bk.sh ${i}  &
+done
