@@ -26,5 +26,9 @@ do
     echo "datadir" + $datadir
     echo "nodeky" + $datadir+"/nodekey"
     cat $datadir+"/nodekey"
-nohup ../bin/schnorrmpc --verbosity 3 --port $p2pPort --rpc --rpcport $rpcPort --rpcapi 'admin,debug,storeman,web3' --storeman  --datadir $datadir --keystore $ksdir --password ../conf/cfg/pwd.json --ipcpath $datadir/mpc.ipc --maxpeers 500 --nodekey $datadir/nodekey --threshold 17 --totalnodes 21  --bootnodes "enode://227ea0bbf86764014a1bc0d123ee18edc6e79b5e602f2f4706a985369bbfc7cfd91f2a14f1c71aad137c814abf6659342213fb7c4af1eb114dea37d51d6e0fbf@127.0.0.1:30000"  >  /tmp/node${index} 2>&1 &
+#nohup ../bin/schnorrmpc --verbosity 3 --port $p2pPort --rpc --rpcport $rpcPort --rpcapi 'admin,debug,storeman,web3' --storeman  --datadir $datadir --keystore $ksdir --password ../conf/cfg/pwd.json --ipcpath $datadir/mpc.ipc --maxpeers 500 --nodekey $datadir/nodekey --threshold 17 --totalnodes 21  --bootnodes "enode://227ea0bbf86764014a1bc0d123ee18edc6e79b5e602f2f4706a985369bbfc7cfd91f2a14f1c71aad137c814abf6659342213fb7c4af1eb114dea37d51d6e0fbf@127.0.0.1:30000"  >  /tmp/node${index} 2>&1 &
+
+echo "nohup ../bin/schnorrmpc --verbosity 3 --cpuprofile $prof --port $p2pPort --rpc --rpcport $rpcPort --rpcapi 'admin,debug,storeman,web3' --storeman  --datadir $datadir --keystore $ksdir --password ../conf/cfg/pwd.json --ipcpath $datadir/mpc.ipc --maxpeers 500 --nodekey $datadir/nodekey --threshold 17 --totalnodes 21  --bootnodes "enode://227ea0bbf86764014a1bc0d123ee18edc6e79b5e602f2f4706a985369bbfc7cfd91f2a14f1c71aad137c814abf6659342213fb7c4af1eb114dea37d51d6e0fbf@127.0.0.1:30000"  >  /tmp/node${index} 2>&1 &"
+
+nohup ../bin/schnorrmpc --verbosity 3 --cpuprofile $prof --port $p2pPort --rpc --rpcport $rpcPort --rpcapi 'admin,debug,storeman,web3' --storeman  --datadir $datadir --keystore $ksdir --password ../conf/cfg/pwd.json --ipcpath $datadir/mpc.ipc --maxpeers 500 --nodekey $datadir/nodekey --threshold 17 --totalnodes 21  --bootnodes "enode://227ea0bbf86764014a1bc0d123ee18edc6e79b5e602f2f4706a985369bbfc7cfd91f2a14f1c71aad137c814abf6659342213fb7c4af1eb114dea37d51d6e0fbf@127.0.0.1:30000"  >  /tmp/node${index} 2>&1 &
 done
