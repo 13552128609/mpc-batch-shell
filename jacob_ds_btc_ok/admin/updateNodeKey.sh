@@ -2,7 +2,7 @@ index=1
 i=0
 j=0
 
-myNodeKeyList=$(cat ../conf/groupConf/nodeKeyList| awk '{print $1}')
+myNodeKeyList=$(cat ../conf/grpConf/nodeKeyList| awk '{print $1}')
 echo "myNodeKeyList:"${myNodeKeyList}
 
 for key in  ${myNodeKeyList}
@@ -13,7 +13,7 @@ done
 
 echo $wa
 
-for nodeKey  in $(cat ../conf/cfg/nodeList)
+for nodeKey  in $(cat ../conf/grpConf/nodeKeyList| awk '{print $1}')
 do 
   	if [ ${index} -lt 10 ];then
         echo "${nodeKeyList[$i]}" > ../nodes/'n0'${index}/data/nodekey
