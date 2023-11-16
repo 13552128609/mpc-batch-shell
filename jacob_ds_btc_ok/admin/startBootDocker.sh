@@ -3,6 +3,8 @@ image='wanchain/mpc-peer-debug:latest'
 
 index=1
 
+ROOTPATH="/home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok"
+
 loglevel=3
     p2pPort=30000
     nodename=boot
@@ -11,9 +13,9 @@ loglevel=3
 	    --rm \
         --name $container \
         -p $p2pPort:$p2pPort -p $p2pPort:$p2pPort/udp \
-        -v /home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/bin:/mpc-bin \
-        -v /home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/nodes/$nodename:/mpc-nodes \
-        -v /home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/conf/cfg:/mpc-cfg \
+        -v $ROOTPATH/bin:/mpc-bin \
+        -v $ROOTPATH/nodes/$nodename:/mpc-nodes \
+        -v $ROOTPATH/conf/cfg:/mpc-cfg \
         -v /tmp:/tmp \
         -d $image \
 	--port $p2pPort \

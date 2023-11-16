@@ -5,6 +5,8 @@ index=1
 
 loglevel=3
 
+ROOTPATH="/home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/"
+
 for nodeKey  in $(cat ../conf/grpConf/nodeKeyList|awk '{print $1}')
 do
         if [ ${index} -lt 10 ];then
@@ -25,7 +27,7 @@ do
 echo && echo " ********************************************************* "
 echo $container
 
-cmd="sudo docker exec  -i $container /mpc-bin/schnorrmpc attach /mpc-nodes/data/mpc.ipc < /home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/cmd/peers.cmd"
+cmd="sudo docker exec  -i $container /mpc-bin/schnorrmpc attach /mpc-nodes/data/mpc.ipc < $ROOTPATH/cmd/peers.cmd"
 #echo $cmd
 eval $cmd
 #`$cmd 2>&1`

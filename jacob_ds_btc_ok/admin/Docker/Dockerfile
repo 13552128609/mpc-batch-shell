@@ -1,5 +1,6 @@
 # ubuntu
-FROM ubuntu:20.04
+#FROM ubuntu:20.04
+FROM ubuntu:18.04
 MAINTAINER Jacob
 WORKDIR /root
 EXPOSE 1000

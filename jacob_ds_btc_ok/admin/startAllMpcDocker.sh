@@ -5,6 +5,8 @@ index=1
 
 loglevel=3
 
+ROOTPATH="/home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok"
+
 for nodeKey  in $(cat ../conf/grpConf/nodeKeyList|awk '{print $1}')
 do
         if [ ${index} -lt 10 ];then
@@ -28,11 +30,11 @@ do
 	    --rm \
         --name $container \
         -p $p2pPort:$p2pPort -p $p2pPort:$p2pPort/udp -p $mpcport:8545 \
-        -v /home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/bin:/mpc-bin \
-        -v /home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/nodes/$nodename:/mpc-nodes \
-        -v /home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/conf/cfg:/mpc-cfg \
+        -v $ROOTPATH/bin:/mpc-bin \
+        -v $ROOTPATH/nodes/$nodename:/mpc-nodes \
+        -v $ROOTPATH/conf/cfg:/mpc-cfg \
         -v /tmp:/tmp \
-        -v //home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/cmd:/mpc-cmd \
+        -v $ROOTPATH/cmd:/mpc-cmd \
         -d $image \
 	--port $p2pPort \
 	--verbosity $loglevel \
