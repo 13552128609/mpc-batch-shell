@@ -1,0 +1,1 @@
+storeman.peers().length
