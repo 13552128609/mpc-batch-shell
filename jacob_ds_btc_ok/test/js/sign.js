@@ -54,15 +54,16 @@ async function main() {
             Object.assign(signDataTemp, signDataS.pop())
             //console.log("signDataTemp", signDataTemp)
             //console.log("web3.storeman", web3.storeman)
-            let begin=Date.now()	
-            web3.storeman.signByApprove(signDataTemp, async (err, result) => {
+            let begin=Date.now()
+            //web3.storeman.signByApprove(signDataTemp, async (err, result) => {
+            web3.storeman.signByApprove(signDataTemp, (err, result) => {
 		    signed++
 		    let end=Date.now()
 		    if(parseInt(signed) == parseInt(NUM)){
     				console.log("lastNum",NUM,"allTime",(Date.now()-allBegin)/1000)
 		    }
                 console.log("signedNum",signed,"status", err==null?'success':err, "result", result==null?'null':result.ResultType,"incentive",result!=null?result.IncntData:'null',
-			"during",parseInt((end-begin)/1000),"begi",parseInt(begin/1000),"end",parseInt(end/1000))
+			"during",parseInt((end-begin)/1000),"begin",parseInt(begin/1000),"end",parseInt(end/1000),"beginDate",(new Date(begin)), "endDate",(new Date(end)))
                 remain = remain + 1
             })
         }
