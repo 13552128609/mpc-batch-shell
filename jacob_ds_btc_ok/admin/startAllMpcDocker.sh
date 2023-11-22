@@ -5,19 +5,19 @@ index=1
 
 loglevel=3
 
-ROOTPATH="/home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok"
+ROOTPATH="/home/qjia/mpc-batch-shell/jacob_ds_btc_ok"
 
 for nodeKey  in $(cat ../conf/grpConf/nodeKeyList|awk '{print $1}')
 do
         if [ ${index} -lt 10 ];then
-                p2pPort=3000${index}
-                rpcPort=4000${index}
+                p2pPort=5000${index}
+                rpcPort=6000${index}
                 datadir=../nodes/'n0'${index}/data                
                 ksdir=../nodes/'n0'${index}/ks
 		nodename='n0'${index}
         else
-                p2pPort=300${index}
-                rpcPort=400${index}
+                p2pPort=500${index}
+                rpcPort=600${index}
                 datadir=../nodes/'n'${index}/data                
                 ksdir=../nodes/'n'${index}/ks
 		nodename='n'${index}

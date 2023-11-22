@@ -1,4 +1,4 @@
-const ipc = "/home/jacob/mpc-batch-shell/jacob_ds_btc_ok/nodes/n01/data/mpc.ipc"
+const ipc = "/home/qjia/mpc-batch-shell/jacob_ds_btc_ok/nodes/n01/data/mpc.ipc"
 
 const Web3 = require("web3")
 const conf = require("./data").conf

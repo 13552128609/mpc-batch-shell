@@ -3,10 +3,10 @@ image='wanchain/mpc-peer-debug:latest'
 
 index=1
 
-ROOTPATH="/home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok"
+ROOTPATH="/home/qjia/mpc-batch-shell/jacob_ds_btc_ok"
 
 loglevel=3
-    p2pPort=30000
+    p2pPort=50000
     nodename=boot
     container="mpc_boot"
     cmd="sudo docker run \

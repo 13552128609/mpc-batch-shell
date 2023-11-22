@@ -5,7 +5,7 @@ index=1
 
 loglevel=3
 
-ROOTPATH="/home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/"
+ROOTPATH="/home/qjia/mpc-batch-shell/jacob_ds_btc_ok/"
 
 for nodeKey  in $(cat ../conf/grpConf/nodeKeyList|awk '{print $1}')
 do
@@ -35,3 +35,9 @@ eval $cmd
 echo && echo " ********************************************************* "
 
 done
+
+echo && echo " ********************************************************* "
+echo "mpc_boot"
+cmd="sudo docker exec  -i mpc_boot /mpc-bin/schnorrmpc attach /mpc-nodes/data/mpc.ipc < $ROOTPATH/cmd/peers.cmd"
+eval $cmd
+echo && echo " ********************************************************* "
