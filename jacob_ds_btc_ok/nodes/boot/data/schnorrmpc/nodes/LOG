@@ -8207,3 +8207,64 @@
 01:49:58.642470 table@remove removed @2205
 01:49:58.642562 table@remove removed @2202
 01:49:58.642750 table@remove removed @2201
+=============== Nov 21, 2023 (PST) ===============
+18:35:55.219895 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:35:55.531710 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+18:35:55.531730 db@open opening
+18:35:55.531818 journal@recovery F·1
+18:35:55.532227 journal@recovery recovering @2206
+18:35:56.457549 memdb@flush created L0@2209 N·33699 S·203KiB "n:\x00..ver,v28751878":"n:\xfa..ong,v28718350"
+18:35:56.457886 version@stat F·[1 1] S·206KiB[203KiB 3KiB] Sc·[0.25 0.00]
+18:35:56.461565 db@janitor F·4 G·0
+18:35:56.461603 db@open done T·929.866032ms
+=============== Nov 21, 2023 (PST) ===============
+18:37:43.139152 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:37:43.139405 version@stat F·[1 1] S·206KiB[203KiB 3KiB] Sc·[0.25 0.00]
+18:37:43.139435 db@open opening
+18:37:43.139519 journal@recovery F·1
+18:37:43.140217 journal@recovery recovering @2210
+18:37:43.143904 memdb@flush created L0@2212 N·28 S·1KiB "n:\x00..ail,v28751946":"n:\xfa..ail,v28751940"
+18:37:43.145051 version@stat F·[2 1] S·208KiB[205KiB 3KiB] Sc·[0.50 0.00]
+18:37:43.148395 db@janitor F·5 G·0
+18:37:43.148451 db@open done T·9.009236ms
+18:37:43.151870 table@compaction L0·2 -> L1·1 S·208KiB Q·28751947
+18:37:43.169056 table@build created L1@2215 N·104 S·3KiB "n:\x00..ver,v28751878":"version,v1"
+18:37:43.169141 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+18:37:43.170926 table@compaction committed F-2 S-205KiB Ke·0 D·33727 T·18.986223ms
+18:37:43.171067 table@remove removed @2212
+18:37:43.171175 table@remove removed @2209
+18:37:43.171295 table@remove removed @2208
+18:57:43.305960 memdb@flush N·44021 S·3MiB
+18:57:43.330977 memdb@flush created L0@2217 N·44021 S·262KiB "n:\x00..ver,v28795952":"n:\xfa..ong,v28752054"
+18:57:43.331041 version@stat F·[1 1] S·266KiB[262KiB 3KiB] Sc·[0.25 0.00]
+18:57:43.333017 memdb@flush committed F·1 T·26.976042ms
+18:57:43.373492 journal@remove removed @2213
+19:18:06.539403 memdb@flush N·43922 S·3MiB
+19:18:06.566908 memdb@flush created L0@2219 N·43922 S·263KiB "n:\x00..ver,v28839202":"n:\xfa..ong,v28796438"
+19:18:06.566980 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+19:18:06.570887 memdb@flush committed F·1 T·31.443536ms
+19:18:06.572575 journal@remove removed @2216
+19:18:10.543283 table@compaction L0·2 -> L1·1 S·529KiB Q·28840006
+19:18:10.578993 table@build created L1@2220 N·104 S·3KiB "n:\x00..ver,v28839202":"version,v1"
+19:18:10.579142 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+19:18:10.580776 table@compaction committed F-2 S-526KiB Ke·0 D·87943 T·37.3523ms
+19:18:10.580996 table@remove removed @2219
+19:18:10.581360 table@remove removed @2217
+19:18:10.699790 table@remove removed @2215
+19:39:03.301506 memdb@flush N·43880 S·3MiB
+19:39:03.331991 memdb@flush created L0@2222 N·43880 S·263KiB "n:\x00..ver,v28882012":"n:\xfa..ong,v28841317"
+19:39:03.332054 version@stat F·[1 1] S·267KiB[263KiB 3KiB] Sc·[0.25 0.00]
+19:39:03.333409 memdb@flush committed F·1 T·31.849205ms
+19:39:03.334847 journal@remove removed @2218
+20:00:46.150318 memdb@flush N·43825 S·3MiB
+20:00:46.177207 memdb@flush created L0@2224 N·43825 S·264KiB "n:\x00..ver,v28927462":"n:\xfa..ong,v28884558"
+20:00:46.177270 version@stat F·[2 1] S·531KiB[527KiB 3KiB] Sc·[0.50 0.00]
+20:00:46.179168 memdb@flush committed F·1 T·28.809851ms
+20:00:46.180241 journal@remove removed @2221
+20:00:50.149752 table@compaction L0·2 -> L1·1 S·531KiB Q·28927614
+20:00:50.180809 table@build created L1@2225 N·104 S·3KiB "n:\x00..ver,v28927462":"version,v1"
+20:00:50.180931 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+20:00:50.183180 table@compaction committed F-2 S-527KiB Ke·0 D·87705 T·33.367066ms
+20:00:50.183300 table@remove removed @2224
+20:00:50.183418 table@remove removed @2222
+20:00:50.183472 table@remove removed @2220
