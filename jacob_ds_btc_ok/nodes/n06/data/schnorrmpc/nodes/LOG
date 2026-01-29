@@ -1,6 +1,706 @@
-=============== Jun 21, 2024 (CST) ===============
-15:05:27.403034 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-15:05:27.405495 db@open opening
-15:05:27.406733 version@stat F·[] S·0B[] Sc·[]
-15:05:27.408487 db@janitor F·2 G·0
-15:05:27.408544 db@open done T·3.000631ms
+=============== Jan 28, 2026 (CST) ===============
+17:02:40.370157 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:02:40.547101 db@open opening
+17:02:40.548465 version@stat F·[] S·0B[] Sc·[]
+17:02:40.688955 db@janitor F·2 G·0
+17:02:40.688998 db@open done T·141.875176ms
+=============== Jan 28, 2026 (CST) ===============
+17:29:05.079540 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:29:05.079772 version@stat F·[] S·0B[] Sc·[]
+17:29:05.079783 db@open opening
+17:29:05.079832 journal@recovery F·1
+17:29:05.080424 journal@recovery recovering @1
+17:29:05.162046 memdb@flush created L0@2 N·33406 S·206KiB "n:\x00..ver,v32936":"version,v1"
+17:29:05.163279 version@stat F·[1] S·206KiB[206KiB] Sc·[0.25]
+17:29:05.480872 db@janitor F·3 G·0
+17:29:05.480936 db@open done T·401.143637ms
+=============== Jan 28, 2026 (CST) ===============
+17:33:52.250120 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:33:52.250314 version@stat F·[1] S·206KiB[206KiB] Sc·[0.25]
+17:33:52.250322 db@open opening
+17:33:52.250379 journal@recovery F·1
+17:33:52.250850 journal@recovery recovering @3
+17:33:52.332377 memdb@flush created L0@5 N·12786 S·78KiB "n:\x00..ver,v45961":"n:\xfa..ong,v33807"
+17:33:52.333627 version@stat F·[2] S·285KiB[285KiB] Sc·[0.50]
+17:33:52.452545 db@janitor F·4 G·0
+17:33:52.452591 db@open done T·202.262584ms
+17:33:52.456411 table@compaction L0·2 -> L1·0 S·285KiB Q·46194
+17:33:52.534895 table@build created L1@8 N·101 S·3KiB "n:\x00..ver,v45961":"version,v1"
+17:33:52.534945 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+17:33:52.663537 table@compaction committed F-1 S-282KiB Ke·0 D·46091 T·207.084093ms
+17:33:52.663860 table@remove removed @5
+17:33:52.663990 table@remove removed @2
+=============== Jan 28, 2026 (CST) ===============
+17:45:45.198273 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:45:45.198506 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+17:45:45.198526 db@open opening
+17:45:45.198618 journal@recovery F·1
+17:45:45.205285 journal@recovery recovering @6
+17:45:45.454359 memdb@flush created L0@9 N·27336 S·163KiB "n:\x00..ver,v73145":"n:\xfa..ong,v46293"
+17:45:45.455447 version@stat F·[1 1] S·167KiB[163KiB 3KiB] Sc·[0.25 0.00]
+17:45:45.560260 db@janitor F·4 G·0
+17:45:45.560284 db@open done T·361.749518ms
+=============== Jan 28, 2026 (CST) ===============
+17:53:28.809128 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:53:28.809311 version@stat F·[1 1] S·167KiB[163KiB 3KiB] Sc·[0.25 0.00]
+17:53:28.809323 db@open opening
+17:53:28.809379 journal@recovery F·1
+17:53:28.809818 journal@recovery recovering @10
+17:53:28.913170 memdb@flush created L0@12 N·18542 S·112KiB "n:\x00..ver,v91304":"n:\xfa..ong,v74390"
+17:53:28.914262 version@stat F·[2 1] S·279KiB[276KiB 3KiB] Sc·[0.50 0.00]
+17:53:29.043254 db@janitor F·5 G·0
+17:53:29.043279 db@open done T·233.949998ms
+17:53:29.046610 table@compaction L0·2 -> L1·1 S·279KiB Q·92074
+17:53:29.102854 table@build created L1@15 N·101 S·3KiB "n:\x00..ver,v91304":"version,v1"
+17:53:29.102915 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+17:53:29.226454 table@compaction committed F-2 S-276KiB Ke·0 D·45878 T·179.809893ms
+17:53:29.226717 table@remove removed @12
+17:53:29.226849 table@remove removed @9
+17:53:29.226909 table@remove removed @8
+18:12:52.192117 memdb@flush N·44107 S·3MiB
+18:12:52.246393 memdb@flush created L0@17 N·44107 S·262KiB "n:\x00..ver,v135429":"n:\xfa..ong,v92311"
+18:12:52.246446 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+18:12:52.273741 memdb@flush committed F·1 T·81.53585ms
+18:12:52.274813 journal@remove removed @13
+18:32:16.023052 memdb@flush N·44022 S·3MiB
+18:32:16.165283 memdb@flush created L0@19 N·44022 S·262KiB "n:\x00..ver,v179609":"n:\xfa..ong,v136725"
+18:32:16.165340 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+18:32:16.308420 memdb@flush committed F·1 T·285.325212ms
+18:32:16.309740 journal@remove removed @16
+18:32:20.025440 table@compaction L0·2 -> L1·1 S·528KiB Q·180224
+18:32:20.077723 table@build created L1@20 N·101 S·3KiB "n:\x00..ver,v179609":"version,v1"
+18:32:20.077805 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+18:32:20.105996 table@compaction committed F-2 S-525KiB Ke·0 D·88129 T·80.51229ms
+18:32:20.106204 table@remove removed @19
+18:32:20.106394 table@remove removed @17
+18:32:20.106474 table@remove removed @15
+18:53:47.626028 memdb@flush N·43916 S·3MiB
+18:53:47.682675 memdb@flush created L0@22 N·43916 S·263KiB "n:\x00..ver,v222764":"n:\xfa..ong,v180692"
+18:53:47.682751 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+18:53:47.698204 memdb@flush committed F·1 T·72.078037ms
+18:53:47.699527 journal@remove removed @18
+=============== Jan 28, 2026 (CST) ===============
+18:56:06.430760 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:56:06.430952 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+18:56:06.430963 db@open opening
+18:56:06.431013 journal@recovery F·1
+18:56:06.431285 journal@recovery recovering @21
+18:56:06.545013 memdb@flush created L0@23 N·8623 S·54KiB "n:\x00..ver,v232698":"n:\xfa..ong,v225100"
+18:56:06.545735 version@stat F·[2 1] S·321KiB[317KiB 3KiB] Sc·[0.50 0.00]
+18:56:06.667058 db@janitor F·5 G·0
+18:56:06.667082 db@open done T·236.112946ms
+18:56:06.670839 table@compaction L0·2 -> L1·1 S·321KiB Q·232743
+18:56:06.793354 table@build created L1@26 N·101 S·3KiB "n:\x00..ver,v232698":"version,v1"
+18:56:06.793445 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+18:56:07.233263 table@compaction committed F-2 S-317KiB Ke·0 D·52539 T·562.382082ms
+18:56:07.233821 table@remove removed @23
+18:56:07.233947 table@remove removed @22
+18:56:07.234009 table@remove removed @20
+19:15:59.162486 memdb@flush N·44080 S·3MiB
+19:15:59.216669 memdb@flush created L0@28 N·44080 S·262KiB "n:\x00..ver,v276060":"n:\xfa..ong,v233904"
+19:15:59.216731 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+19:15:59.271909 memdb@flush committed F·1 T·106.532122ms
+19:15:59.272956 journal@remove removed @24
+19:35:19.749109 memdb@flush N·44021 S·3MiB
+19:35:19.799127 memdb@flush created L0@30 N·44021 S·262KiB "n:\x00..ver,v320368":"n:\xfa..ong,v277286"
+19:35:19.799161 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+19:35:19.856753 memdb@flush committed F·1 T·107.560259ms
+19:35:19.857878 journal@remove removed @27
+19:35:23.752156 table@compaction L0·2 -> L1·1 S·528KiB Q·320951
+19:35:23.805468 table@build created L1@31 N·101 S·3KiB "n:\x00..ver,v320368":"version,v1"
+19:35:23.805524 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+19:35:23.835022 table@compaction committed F-2 S-525KiB Ke·0 D·88101 T·82.836331ms
+19:35:23.835182 table@remove removed @30
+19:35:23.835278 table@remove removed @28
+19:35:23.835318 table@remove removed @26
+19:56:37.133922 memdb@flush N·43916 S·3MiB
+19:56:37.183468 memdb@flush created L0@33 N·43916 S·263KiB "n:\x00..ver,v364497":"n:\xfa..ong,v321607"
+19:56:37.183509 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+19:56:37.211964 memdb@flush committed F·1 T·78.008916ms
+19:56:37.213162 journal@remove removed @29
+20:16:42.754896 memdb@flush N·43995 S·3MiB
+20:16:42.978328 memdb@flush created L0@35 N·43995 S·262KiB "n:\x00..ver,v408474":"n:\xfa..ong,v366617"
+20:16:42.978466 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+20:16:43.053963 memdb@flush committed F·1 T·299.033746ms
+20:16:43.055010 journal@remove removed @32
+20:16:44.756362 table@compaction L0·2 -> L1·1 S·528KiB Q·408813
+20:16:44.829308 table@build created L1@36 N·101 S·3KiB "n:\x00..ver,v408474":"version,v1"
+20:16:44.829371 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+20:16:44.886916 table@compaction committed F-2 S-525KiB Ke·0 D·87911 T·130.522919ms
+20:16:44.887117 table@remove removed @35
+20:16:44.887290 table@remove removed @33
+20:16:44.887341 table@remove removed @31
+20:36:12.661356 memdb@flush N·44023 S·3MiB
+20:36:12.715182 memdb@flush created L0@38 N·44023 S·262KiB "n:\x00..ver,v452483":"n:\xfa..ong,v409686"
+20:36:12.715236 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+20:36:12.742390 memdb@flush committed F·1 T·81.004527ms
+20:36:12.743547 journal@remove removed @34
+20:57:08.748479 memdb@flush N·43943 S·3MiB
+20:57:08.832027 memdb@flush created L0@40 N·43943 S·262KiB "n:\x00..ver,v496529":"n:\xfa..ong,v454105"
+20:57:08.832092 version@stat F·[2 1] S·527KiB[524KiB 3KiB] Sc·[0.50 0.00]
+20:57:08.987869 memdb@flush committed F·1 T·239.32376ms
+20:57:08.989006 journal@remove removed @37
+20:57:12.752026 table@compaction L0·2 -> L1·1 S·527KiB Q·496995
+20:57:12.813539 table@build created L1@41 N·101 S·3KiB "n:\x00..ver,v496529":"version,v1"
+20:57:12.813580 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+20:57:12.841000 table@compaction committed F-2 S-524KiB Ke·0 D·87966 T·88.946889ms
+20:57:12.841144 table@remove removed @40
+20:57:12.841308 table@remove removed @38
+20:57:12.841389 table@remove removed @36
+21:17:54.735980 memdb@flush N·43969 S·3MiB
+21:17:54.806144 memdb@flush created L0@43 N·43969 S·262KiB "n:\x00..ver,v540034":"n:\xfa..ong,v497871"
+21:17:54.806504 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+21:17:54.865679 memdb@flush committed F·1 T·129.645662ms
+21:17:54.866826 journal@remove removed @39
+21:37:38.816935 memdb@flush N·43999 S·3MiB
+21:37:38.879475 memdb@flush created L0@45 N·43999 S·262KiB "n:\x00..ver,v584627":"n:\xfa..ong,v541419"
+21:37:38.879509 version@stat F·[2 1] S·528KiB[524KiB 3KiB] Sc·[0.50 0.00]
+21:37:38.936113 memdb@flush committed F·1 T·119.126683ms
+21:37:38.937072 journal@remove removed @42
+21:37:42.821265 table@compaction L0·2 -> L1·1 S·528KiB Q·584788
+21:37:42.864670 table@build created L1@46 N·101 S·3KiB "n:\x00..ver,v584627":"version,v1"
+21:37:42.864755 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+21:37:42.920060 table@compaction committed F-2 S-524KiB Ke·0 D·87968 T·98.761141ms
+21:37:42.920212 table@remove removed @45
+21:37:42.920353 table@remove removed @43
+21:37:42.920411 table@remove removed @41
+21:57:54.220454 memdb@flush N·43993 S·3MiB
+21:57:54.271949 memdb@flush created L0@48 N·43993 S·263KiB "n:\x00..ver,v627621":"n:\xfa..ong,v587573"
+21:57:54.271985 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+21:57:54.299848 memdb@flush committed F·1 T·79.337044ms
+21:57:54.300982 journal@remove removed @44
+22:19:19.491865 memdb@flush N·43916 S·3MiB
+22:19:19.540942 memdb@flush created L0@50 N·43916 S·263KiB "n:\x00..ver,v672102":"n:\xfa..ong,v629355"
+22:19:19.540994 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+22:19:19.568293 memdb@flush committed F·1 T·76.348613ms
+22:19:19.569272 journal@remove removed @47
+22:19:23.495957 table@compaction L0·2 -> L1·1 S·529KiB Q·672722
+22:19:23.607807 table@build created L1@51 N·101 S·3KiB "n:\x00..ver,v672102":"version,v1"
+22:19:23.607913 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+22:19:23.715321 table@compaction committed F-2 S-526KiB Ke·0 D·87909 T·219.327748ms
+22:19:23.715522 table@remove removed @50
+22:19:23.715710 table@remove removed @48
+22:19:23.715787 table@remove removed @46
+22:39:05.089633 memdb@flush N·44020 S·3MiB
+22:39:05.131589 memdb@flush created L0@53 N·44020 S·262KiB "n:\x00..ver,v715589":"n:\xfa..ong,v672932"
+22:39:05.131625 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+22:39:05.159916 memdb@flush committed F·1 T·70.228874ms
+22:39:05.160986 journal@remove removed @49
+22:58:50.849680 memdb@flush N·43994 S·3MiB
+22:58:50.934049 memdb@flush created L0@55 N·43994 S·262KiB "n:\x00..ver,v760069":"n:\xfa..ong,v717847"
+22:58:50.934091 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+22:58:50.966433 memdb@flush committed F·1 T·116.660423ms
+22:58:50.967510 journal@remove removed @52
+22:58:54.853476 table@compaction L0·2 -> L1·1 S·528KiB Q·760757
+22:58:54.910753 table@build created L1@56 N·101 S·3KiB "n:\x00..ver,v760069":"version,v1"
+22:58:54.910824 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+22:58:54.938521 table@compaction committed F-2 S-525KiB Ke·0 D·88014 T·85.014068ms
+22:58:54.938672 table@remove removed @55
+22:58:54.938822 table@remove removed @53
+22:58:54.938931 table@remove removed @51
+23:20:37.734931 memdb@flush N·43889 S·3MiB
+23:20:37.784897 memdb@flush created L0@58 N·43889 S·263KiB "n:\x00..ver,v804456":"n:\xfa..ong,v760728"
+23:20:37.784957 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+23:20:37.812639 memdb@flush committed F·1 T·77.646129ms
+23:20:37.813886 journal@remove removed @54
+23:40:36.677385 memdb@flush N·44015 S·3MiB
+23:40:36.728855 memdb@flush created L0@60 N·44015 S·262KiB "n:\x00..ver,v848514":"n:\xfa..ong,v806185"
+23:40:36.728903 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+23:40:36.783069 memdb@flush committed F·1 T·105.643119ms
+23:40:36.784175 journal@remove removed @57
+23:40:38.243477 table@compaction L0·2 -> L1·1 S·528KiB Q·848593
+23:40:38.308658 table@build created L1@61 N·101 S·3KiB "n:\x00..ver,v848514":"version,v1"
+23:40:38.308723 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+23:40:38.341862 table@compaction committed F-2 S-525KiB Ke·0 D·87904 T·98.350291ms
+23:40:38.342027 table@remove removed @60
+23:40:38.342201 table@remove removed @58
+23:40:38.342262 table@remove removed @56
+23:59:56.946519 memdb@flush N·44026 S·3MiB
+23:59:56.998883 memdb@flush created L0@63 N·44026 S·262KiB "n:\x00..ver,v891805":"n:\xfa..ong,v849570"
+23:59:56.998942 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+23:59:57.056137 memdb@flush committed F·1 T·109.587694ms
+23:59:57.057484 journal@remove removed @59
+=============== Jan 29, 2026 (CST) ===============
+00:21:44.138082 memdb@flush N·43889 S·3MiB
+00:21:44.190539 memdb@flush created L0@65 N·43889 S·263KiB "n:\x00..ver,v936147":"n:\xfa..ong,v893062"
+00:21:44.190584 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+00:21:44.217557 memdb@flush committed F·1 T·79.422377ms
+00:21:44.219073 journal@remove removed @62
+00:21:48.140468 table@compaction L0·2 -> L1·1 S·528KiB Q·936451
+00:21:48.232820 table@build created L1@66 N·101 S·3KiB "n:\x00..ver,v936147":"version,v1"
+00:21:48.232866 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+00:21:48.261166 table@compaction committed F-2 S-525KiB Ke·0 D·87915 T·120.667696ms
+00:21:48.261368 table@remove removed @65
+00:21:48.261481 table@remove removed @63
+00:21:48.261524 table@remove removed @61
+00:41:25.626849 memdb@flush N·44021 S·3MiB
+00:41:25.676008 memdb@flush created L0@68 N·44021 S·262KiB "n:\x00..ver,v979834":"n:\xfa..ong,v936559"
+00:41:25.676061 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+00:41:25.703914 memdb@flush committed F·1 T·77.030829ms
+00:41:25.705205 journal@remove removed @64
+01:00:46.255970 memdb@flush N·44022 S·3MiB
+01:00:46.306049 memdb@flush created L0@70 N·44022 S·262KiB "n:\x00..ver,v1024086":"n:\xfa..ong,v980520"
+01:00:46.306100 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+01:00:46.333469 memdb@flush committed F·1 T·77.44984ms
+01:00:46.334644 journal@remove removed @67
+01:00:50.259089 table@compaction L0·2 -> L1·1 S·528KiB Q·1024608
+01:00:50.711631 table@build created L1@71 N·101 S·3KiB "n:\x00..ver,v1024086":"version,v1"
+01:00:50.711700 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+01:00:50.854946 table@compaction committed F-2 S-525KiB Ke·0 D·88043 T·595.795467ms
+01:00:50.855248 table@remove removed @70
+01:00:50.855453 table@remove removed @68
+01:00:50.855552 table@remove removed @66
+01:22:50.213417 memdb@flush N·43890 S·3MiB
+01:22:50.267106 memdb@flush created L0@73 N·43890 S·263KiB "n:\x00..ver,v1067944":"n:\xfa..ong,v1024540"
+01:22:50.267164 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+01:22:50.321465 memdb@flush committed F·1 T·107.992081ms
+01:22:50.322556 journal@remove removed @69
+01:42:26.022832 memdb@flush N·44023 S·3MiB
+01:42:26.074092 memdb@flush created L0@75 N·44023 S·262KiB "n:\x00..ver,v1111761":"n:\xfa..ong,v1069035"
+01:42:26.074163 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+01:42:26.128184 memdb@flush committed F·1 T·105.304498ms
+01:42:26.129526 journal@remove removed @72
+01:42:30.024570 table@compaction L0·2 -> L1·1 S·529KiB Q·1112468
+01:42:30.077848 table@build created L1@76 N·101 S·3KiB "n:\x00..ver,v1111761":"version,v1"
+01:42:30.077954 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+01:42:30.105741 table@compaction committed F-2 S-526KiB Ke·0 D·87913 T·81.12692ms
+01:42:30.105915 table@remove removed @75
+01:42:30.106038 table@remove removed @73
+01:42:30.106083 table@remove removed @71
+02:02:17.969833 memdb@flush N·43995 S·3MiB
+02:02:18.022051 memdb@flush created L0@78 N·43995 S·262KiB "n:\x00..ver,v1156068":"n:\xfa..ong,v1113904"
+02:02:18.022095 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+02:02:18.050397 memdb@flush committed F·1 T·80.486918ms
+02:02:18.051586 journal@remove removed @74
+02:24:07.292473 memdb@flush N·43890 S·3MiB
+02:24:07.339352 memdb@flush created L0@80 N·43890 S·263KiB "n:\x00..ver,v1200241":"n:\xfa..ong,v1156601"
+02:24:07.339407 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+02:24:07.394689 memdb@flush committed F·1 T·102.177084ms
+02:24:07.396029 journal@remove removed @77
+02:24:07.411032 table@compaction L0·2 -> L1·1 S·529KiB Q·1200275
+02:24:07.463521 table@build created L1@81 N·101 S·3KiB "n:\x00..ver,v1200241":"version,v1"
+02:24:07.463560 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+02:24:07.492232 table@compaction committed F-2 S-526KiB Ke·0 D·87885 T·81.170872ms
+02:24:07.492349 table@remove removed @80
+02:24:07.492449 table@remove removed @78
+02:24:07.492518 table@remove removed @76
+02:43:56.530242 memdb@flush N·44019 S·3MiB
+02:43:56.580203 memdb@flush created L0@83 N·44019 S·262KiB "n:\x00..ver,v1243643":"n:\xfa..ong,v1201391"
+02:43:56.580292 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+02:43:56.637397 memdb@flush committed F·1 T·107.104922ms
+02:43:56.638450 journal@remove removed @79
+03:03:42.330359 memdb@flush N·43995 S·3MiB
+03:03:42.381368 memdb@flush created L0@85 N·43995 S·262KiB "n:\x00..ver,v1288027":"n:\xfa..ong,v1244491"
+03:03:42.381424 version@stat F·[2 1] S·527KiB[524KiB 3KiB] Sc·[0.50 0.00]
+03:03:42.436078 memdb@flush committed F·1 T·105.679255ms
+03:03:42.437193 journal@remove removed @82
+03:03:46.332263 table@compaction L0·2 -> L1·1 S·527KiB Q·1288307
+03:03:46.426243 table@build created L1@86 N·101 S·3KiB "n:\x00..ver,v1288027":"version,v1"
+03:03:46.426306 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+03:03:46.482474 table@compaction committed F-2 S-524KiB Ke·0 D·88014 T·150.176233ms
+03:03:46.482659 table@remove removed @85
+03:03:46.482817 table@remove removed @83
+03:03:46.482934 table@remove removed @81
+03:25:28.766839 memdb@flush N·43918 S·3MiB
+03:25:28.813968 memdb@flush created L0@88 N·43918 S·263KiB "n:\x00..ver,v1331349":"n:\xfa..ong,v1289710"
+03:25:28.814024 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+03:25:28.841861 memdb@flush committed F·1 T·74.985098ms
+03:25:28.843089 journal@remove removed @84
+03:45:28.859311 memdb@flush N·43995 S·3MiB
+03:45:28.907946 memdb@flush created L0@90 N·43995 S·262KiB "n:\x00..ver,v1375465":"n:\xfa..ong,v1333177"
+03:45:28.907982 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+03:45:28.928947 memdb@flush committed F·1 T·69.598466ms
+03:45:28.929952 journal@remove removed @87
+03:45:32.861255 table@compaction L0·2 -> L1·1 S·529KiB Q·1376294
+03:45:32.921216 table@build created L1@91 N·101 S·3KiB "n:\x00..ver,v1375465":"version,v1"
+03:45:32.921256 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+03:45:32.948799 table@compaction committed F-2 S-526KiB Ke·0 D·87913 T·87.498217ms
+03:45:32.948981 table@remove removed @90
+03:45:32.949098 table@remove removed @88
+03:45:32.949138 table@remove removed @86
+04:05:17.629025 memdb@flush N·43995 S·3MiB
+04:05:17.702265 memdb@flush created L0@93 N·43995 S·262KiB "n:\x00..ver,v1419863":"n:\xfa..ong,v1376716"
+04:05:17.702366 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+04:05:17.730230 memdb@flush committed F·1 T·101.142007ms
+04:05:17.731312 journal@remove removed @89
+04:26:40.406495 memdb@flush N·43916 S·3MiB
+04:26:40.454932 memdb@flush created L0@95 N·43916 S·263KiB "n:\x00..ver,v1463989":"n:\xfa..ong,v1420732"
+04:26:40.454986 version@stat F·[2 1] S·529KiB[525KiB 3KiB] Sc·[0.50 0.00]
+04:26:40.484513 memdb@flush committed F·1 T·77.95307ms
+04:26:40.485618 journal@remove removed @92
+04:26:44.409247 table@compaction L0·2 -> L1·1 S·529KiB Q·1464235
+04:26:44.478207 table@build created L1@96 N·101 S·3KiB "n:\x00..ver,v1463989":"version,v1"
+04:26:44.478269 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+04:26:44.505035 table@compaction committed F-2 S-526KiB Ke·0 D·87911 T·95.753873ms
+04:26:44.505173 table@remove removed @95
+04:26:44.505309 table@remove removed @93
+04:26:44.505355 table@remove removed @91
+04:46:53.547963 memdb@flush N·43996 S·3MiB
+04:46:53.650756 memdb@flush created L0@98 N·43996 S·262KiB "n:\x00..ver,v1507536":"n:\xfa..ong,v1466633"
+04:46:53.650799 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+04:46:53.679655 memdb@flush committed F·1 T·131.650001ms
+04:46:53.680686 journal@remove removed @94
+05:06:54.969416 memdb@flush N·43994 S·3MiB
+05:06:55.018457 memdb@flush created L0@100 N·43994 S·262KiB "n:\x00..ver,v1551420":"n:\xfa..ong,v1508503"
+05:06:55.018534 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+05:06:55.045850 memdb@flush committed F·1 T·76.380771ms
+05:06:55.047127 journal@remove removed @97
+05:06:58.972063 table@compaction L0·2 -> L1·1 S·528KiB Q·1552131
+05:06:59.031052 table@build created L1@101 N·101 S·3KiB "n:\x00..ver,v1551420":"version,v1"
+05:06:59.031115 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+05:06:59.059305 table@compaction committed F-2 S-525KiB Ke·0 D·87990 T·87.188668ms
+05:06:59.059470 table@remove removed @100
+05:06:59.059586 table@remove removed @98
+05:06:59.059689 table@remove removed @96
+05:27:23.388750 memdb@flush N·43969 S·3MiB
+05:27:23.440492 memdb@flush created L0@103 N·43969 S·262KiB "n:\x00..ver,v1594572":"n:\xfa..ong,v1552116"
+05:27:23.440547 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+05:27:23.547307 memdb@flush committed F·1 T·158.510647ms
+05:27:23.548526 journal@remove removed @99
+05:48:30.688224 memdb@flush N·43942 S·3MiB
+05:48:30.774525 memdb@flush created L0@105 N·43942 S·262KiB "n:\x00..ver,v1639223":"n:\xfa..ong,v1596915"
+05:48:30.774582 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+05:48:30.861332 memdb@flush committed F·1 T·173.056102ms
+05:48:30.862711 journal@remove removed @102
+05:48:34.691208 table@compaction L0·2 -> L1·1 S·528KiB Q·1640069
+05:48:34.761328 table@build created L1@106 N·101 S·3KiB "n:\x00..ver,v1639223":"version,v1"
+05:48:34.761411 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+05:48:35.120327 table@compaction committed F-2 S-525KiB Ke·0 D·87911 T·429.086762ms
+05:48:35.120542 table@remove removed @105
+05:48:35.120841 table@remove removed @103
+05:48:35.120891 table@remove removed @101
+06:08:02.112215 memdb@flush N·44024 S·3MiB
+06:08:02.324321 memdb@flush created L0@108 N·44024 S·262KiB "n:\x00..ver,v1683198":"n:\xfa..ong,v1640980"
+06:08:02.324414 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+06:08:02.493991 memdb@flush committed F·1 T·381.713621ms
+06:08:02.495398 journal@remove removed @104
+06:27:57.295792 memdb@flush N·43996 S·3MiB
+06:27:57.379321 memdb@flush created L0@110 N·43996 S·262KiB "n:\x00..ver,v1726730":"n:\xfa..ong,v1684564"
+06:27:57.379400 version@stat F·[2 1] S·527KiB[524KiB 3KiB] Sc·[0.50 0.00]
+06:27:57.435179 memdb@flush committed F·1 T·139.304265ms
+06:27:57.436703 journal@remove removed @107
+06:28:01.299794 table@compaction L0·2 -> L1·1 S·527KiB Q·1728273
+06:28:01.358361 table@build created L1@111 N·101 S·3KiB "n:\x00..ver,v1726730":"version,v1"
+06:28:01.358415 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+06:28:01.385713 table@compaction committed F-2 S-524KiB Ke·0 D·88020 T·85.877905ms
+06:28:01.385857 table@remove removed @110
+06:28:01.385985 table@remove removed @108
+06:28:01.386040 table@remove removed @106
+06:49:27.918189 memdb@flush N·43918 S·3MiB
+06:49:27.981918 memdb@flush created L0@113 N·43918 S·263KiB "n:\x00..ver,v1771272":"n:\xfa..ong,v1728978"
+06:49:27.981963 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+06:49:28.010355 memdb@flush committed F·1 T·92.11959ms
+06:49:28.011786 journal@remove removed @109
+07:08:43.161553 memdb@flush N·44023 S·3MiB
+07:08:43.263580 memdb@flush created L0@115 N·44023 S·262KiB "n:\x00..ver,v1815755":"n:\xfa..ong,v1773431"
+07:08:43.263619 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+07:08:43.291665 memdb@flush committed F·1 T·130.082918ms
+07:08:43.292787 journal@remove removed @112
+07:08:47.164886 table@compaction L0·2 -> L1·1 S·528KiB Q·1816090
+07:08:47.239648 table@build created L1@116 N·101 S·3KiB "n:\x00..ver,v1815755":"version,v1"
+07:08:47.239752 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+07:08:47.308605 table@compaction committed F-2 S-525KiB Ke·0 D·87941 T·143.680859ms
+07:08:47.308749 table@remove removed @115
+07:08:47.308902 table@remove removed @113
+07:08:47.308995 table@remove removed @111
+07:28:23.595266 memdb@flush N·44019 S·3MiB
+07:28:23.696987 memdb@flush created L0@118 N·44019 S·262KiB "n:\x00..ver,v1858931":"n:\xfa..ong,v1816194"
+07:28:23.697033 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+07:28:23.730520 memdb@flush committed F·1 T·135.187288ms
+07:28:23.731663 journal@remove removed @114
+07:50:17.361337 memdb@flush N·43890 S·3MiB
+07:50:17.538133 memdb@flush created L0@120 N·43890 S·263KiB "n:\x00..ver,v1903460":"n:\xfa..ong,v1861617"
+07:50:17.538185 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+07:50:17.598751 memdb@flush committed F·1 T·237.363203ms
+07:50:17.600134 journal@remove removed @117
+07:50:19.359287 table@compaction L0·2 -> L1·1 S·529KiB Q·1903891
+07:50:19.415649 table@build created L1@121 N·101 S·3KiB "n:\x00..ver,v1903460":"version,v1"
+07:50:19.415729 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+07:50:19.471991 table@compaction committed F-2 S-526KiB Ke·0 D·87909 T·112.669615ms
+07:50:19.472178 table@remove removed @120
+07:50:19.472283 table@remove removed @118
+07:50:19.472323 table@remove removed @116
+08:10:11.861617 memdb@flush N·43997 S·3MiB
+08:10:11.917941 memdb@flush created L0@123 N·43997 S·262KiB "n:\x00..ver,v1947676":"n:\xfa..ong,v1906024"
+08:10:11.917978 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+08:10:11.939421 memdb@flush committed F·1 T·77.771674ms
+08:10:11.940491 journal@remove removed @119
+08:29:40.259088 memdb@flush N·44025 S·3MiB
+08:29:40.334757 memdb@flush created L0@125 N·44025 S·262KiB "n:\x00..ver,v1991837":"n:\xfa..ong,v1948236"
+08:29:40.334831 version@stat F·[2 1] S·527KiB[524KiB 3KiB] Sc·[0.50 0.00]
+08:29:40.362022 memdb@flush committed F·1 T·102.874406ms
+08:29:40.363183 journal@remove removed @122
+08:29:44.262701 table@compaction L0·2 -> L1·1 S·527KiB Q·1992019
+08:29:44.318219 table@build created L1@126 N·101 S·3KiB "n:\x00..ver,v1991837":"version,v1"
+08:29:44.318277 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+08:29:44.339599 table@compaction committed F-2 S-524KiB Ke·0 D·88022 T·76.869264ms
+08:29:44.340014 table@remove removed @125
+08:29:44.340187 table@remove removed @123
+08:29:44.340240 table@remove removed @121
+08:51:36.676436 memdb@flush N·43890 S·3MiB
+08:51:36.727473 memdb@flush created L0@128 N·43890 S·263KiB "n:\x00..ver,v2035764":"n:\xfa..ong,v1992000"
+08:51:36.727510 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+08:51:36.755623 memdb@flush committed F·1 T·79.151501ms
+08:51:36.756718 journal@remove removed @124
+09:10:36.675785 memdb@flush N·44071 S·3MiB
+09:10:36.725384 memdb@flush created L0@130 N·44071 S·261KiB "n:\x00..ver,v2079862":"n:\xfa..ong,v2036398"
+09:10:36.725446 version@stat F·[2 1] S·527KiB[524KiB 3KiB] Sc·[0.50 0.00]
+09:10:36.753342 memdb@flush committed F·1 T·77.510768ms
+09:10:36.754398 journal@remove removed @127
+09:10:39.644052 table@compaction L0·2 -> L1·1 S·527KiB Q·2079916
+09:10:39.727272 table@build created L1@131 N·101 S·3KiB "n:\x00..ver,v2079862":"version,v1"
+09:10:39.727356 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+09:10:39.758409 table@compaction committed F-2 S-524KiB Ke·0 D·87961 T·114.32567ms
+09:10:39.758617 table@remove removed @130
+09:10:39.758779 table@remove removed @128
+09:10:39.758858 table@remove removed @126
+09:30:03.255225 memdb@flush N·44026 S·3MiB
+09:30:03.306924 memdb@flush created L0@133 N·44026 S·262KiB "n:\x00..ver,v2123030":"n:\xfa..ong,v2080310"
+09:30:03.306969 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+09:30:03.335154 memdb@flush committed F·1 T·79.892465ms
+09:30:03.336248 journal@remove removed @129
+09:51:53.100963 memdb@flush N·43889 S·3MiB
+09:51:53.192641 memdb@flush created L0@135 N·43889 S·263KiB "n:\x00..ver,v2167183":"n:\xfa..ong,v2124156"
+09:51:53.192676 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+09:51:53.221183 memdb@flush committed F·1 T·120.175175ms
+09:51:53.222262 journal@remove removed @132
+09:51:57.103997 table@compaction L0·2 -> L1·1 S·528KiB Q·2167809
+09:51:57.162402 table@build created L1@136 N·101 S·3KiB "n:\x00..ver,v2167183":"version,v1"
+09:51:57.162462 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+09:51:57.217645 table@compaction committed F-2 S-525KiB Ke·0 D·87915 T·113.616653ms
+09:51:57.217807 table@remove removed @135
+09:51:57.217923 table@remove removed @133
+09:51:57.217982 table@remove removed @131
+=============== Jan 29, 2026 (CST) ===============
+10:08:04.269374 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:08:04.288194 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+10:08:04.288210 db@open opening
+10:08:04.288309 journal@recovery F·1
+10:08:04.288551 journal@recovery recovering @134
+10:08:04.525221 memdb@flush created L0@137 N·36786 S·219KiB "n:\x00..ver,v2203818":"n:\xfa..ong,v2168491"
+10:08:04.530909 version@stat F·[1 1] S·223KiB[219KiB 3KiB] Sc·[0.25 0.00]
+10:08:04.795573 db@janitor F·4 G·0
+10:08:04.795600 db@open done T·507.38483ms
+10:28:02.906112 memdb@flush N·44056 S·3MiB
+10:28:02.959610 memdb@flush created L0@141 N·44056 S·262KiB "n:\x00..ver,v2247617":"n:\xfa..ong,v2205280"
+10:28:02.959678 version@stat F·[2 1] S·486KiB[482KiB 3KiB] Sc·[0.50 0.00]
+10:28:02.988082 memdb@flush committed F·1 T·81.926591ms
+10:28:02.989410 journal@remove removed @138
+10:28:08.218867 table@compaction L0·2 -> L1·1 S·486KiB Q·2248823
+10:28:08.277123 table@build created L1@142 N·101 S·3KiB "n:\x00..ver,v2247617":"version,v1"
+10:28:08.277188 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+10:28:08.323958 table@compaction committed F-2 S-482KiB Ke·0 D·80842 T·105.040659ms
+10:28:08.324134 table@remove removed @141
+10:28:08.324226 table@remove removed @137
+10:28:08.324282 table@remove removed @136
+10:47:05.663569 memdb@flush N·43996 S·3MiB
+10:47:05.736653 memdb@flush created L0@144 N·43996 S·261KiB "n:\x00..ver,v2292526":"n:\xfa..ong,v2249393"
+10:47:05.736716 version@stat F·[1 1] S·264KiB[261KiB 3KiB] Sc·[0.25 0.00]
+10:47:05.791552 memdb@flush committed F·1 T·127.898796ms
+10:47:05.792733 journal@remove removed @140
+11:08:24.908650 memdb@flush N·43906 S·3MiB
+11:08:25.082919 memdb@flush created L0@146 N·43906 S·264KiB "n:\x00..ver,v2335051":"n:\xfa..ong,v2293871"
+11:08:25.095214 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+11:08:25.251867 memdb@flush committed F·1 T·343.131514ms
+11:08:25.253827 journal@remove removed @143
+11:08:28.916398 table@compaction L0·2 -> L1·1 S·528KiB Q·2336697
+11:08:29.004569 table@build created L1@147 N·101 S·3KiB "n:\x00..ver,v2335051":"version,v1"
+11:08:29.004642 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+11:08:29.065050 table@compaction committed F-2 S-525KiB Ke·0 D·87902 T·148.613816ms
+11:08:29.065244 table@remove removed @146
+11:08:29.065380 table@remove removed @144
+11:08:29.065477 table@remove removed @142
+=============== Jan 29, 2026 (CST) ===============
+11:17:47.849496 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:17:47.849916 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+11:17:47.849943 db@open opening
+11:17:47.850023 journal@recovery F·1
+11:17:47.855906 journal@recovery recovering @145
+11:17:47.960165 memdb@flush created L0@148 N·19671 S·118KiB "n:\x00..ver,v2355656":"n:\xfa..ong,v2336608"
+11:17:47.961137 version@stat F·[1 1] S·121KiB[118KiB 3KiB] Sc·[0.25 0.00]
+11:17:48.089216 db@janitor F·4 G·0
+11:17:48.089239 db@open done T·239.287707ms
+=============== Jan 29, 2026 (CST) ===============
+11:31:01.268685 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:31:01.268846 version@stat F·[1 1] S·121KiB[118KiB 3KiB] Sc·[0.25 0.00]
+11:31:01.268854 db@open opening
+11:31:01.268932 journal@recovery F·1
+11:31:01.273531 journal@recovery recovering @149
+11:31:01.386761 memdb@flush created L0@151 N·30442 S·181KiB "n:\x00..ver,v2386429":"n:\xfa..ong,v2357351"
+11:31:01.387366 version@stat F·[2 1] S·303KiB[300KiB 3KiB] Sc·[0.50 0.00]
+11:31:01.565499 db@janitor F·5 G·0
+11:31:01.565523 db@open done T·296.662842ms
+11:31:01.568892 table@compaction L0·2 -> L1·1 S·303KiB Q·2386639
+11:31:01.706412 table@build created L1@154 N·101 S·3KiB "n:\x00..ver,v2386429":"version,v1"
+11:31:01.706468 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+11:31:01.906155 table@compaction committed F-2 S-300KiB Ke·0 D·50113 T·337.234841ms
+11:31:01.906377 table@remove removed @151
+11:31:01.906462 table@remove removed @148
+11:31:01.906501 table@remove removed @147
+11:50:49.537580 memdb@flush N·44078 S·3MiB
+11:50:49.678967 memdb@flush created L0@156 N·44078 S·262KiB "n:\x00..ver,v2430032":"n:\xfa..ong,v2386766"
+11:50:49.679057 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+11:50:49.735766 memdb@flush committed F·1 T·198.128666ms
+11:50:49.737450 journal@remove removed @152
+=============== Jan 29, 2026 (CST) ===============
+12:02:10.136010 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:02:10.136179 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+12:02:10.136202 db@open opening
+12:02:10.136258 journal@recovery F·1
+12:02:10.141131 journal@recovery recovering @155
+12:02:10.256927 memdb@flush created L0@157 N·23966 S·145KiB "n:\x00..ver,v2453351":"n:\xfa..ong,v2431473"
+12:02:10.257837 version@stat F·[2 1] S·411KiB[408KiB 3KiB] Sc·[0.50 0.00]
+12:02:10.361295 db@janitor F·5 G·0
+12:02:10.362647 db@open done T·225.113432ms
+12:02:10.368646 table@compaction L0·2 -> L1·1 S·411KiB Q·2454684
+12:02:10.518930 table@build created L1@160 N·101 S·3KiB "n:\x00..ver,v2453351":"version,v1"
+12:02:10.519031 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+12:02:10.677003 table@compaction committed F-2 S-408KiB Ke·0 D·68044 T·308.307351ms
+12:02:10.677123 table@remove removed @157
+12:02:10.881632 table@remove removed @156
+12:02:10.881859 table@remove removed @154
+=============== Jan 29, 2026 (CST) ===============
+12:14:09.060231 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:14:09.060480 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+12:14:09.060493 db@open opening
+12:14:09.060563 journal@recovery F·1
+12:14:09.060869 journal@recovery recovering @158
+12:14:09.128917 memdb@flush created L0@161 N·27092 S·161KiB "n:\x00..ver,v2481497":"n:\xfa..ong,v2455826"
+12:14:09.130838 version@stat F·[1 1] S·164KiB[161KiB 3KiB] Sc·[0.25 0.00]
+12:14:09.189580 db@janitor F·4 G·0
+12:14:09.189621 db@open done T·129.108682ms
+12:33:57.447577 memdb@flush N·44079 S·3MiB
+12:33:57.506574 memdb@flush created L0@165 N·44079 S·262KiB "n:\x00..ver,v2525265":"n:\xfa..ong,v2482143"
+12:33:57.506611 version@stat F·[2 1] S·427KiB[424KiB 3KiB] Sc·[0.50 0.00]
+12:33:57.534838 memdb@flush committed F·1 T·87.183915ms
+12:33:57.536185 journal@remove removed @162
+=============== Jan 29, 2026 (CST) ===============
+12:34:05.477639 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:34:05.477877 version@stat F·[2 1] S·427KiB[424KiB 3KiB] Sc·[0.50 0.00]
+12:34:05.477891 db@open opening
+12:34:05.477948 journal@recovery F·1
+12:34:05.482499 journal@recovery recovering @164
+12:34:05.613164 memdb@flush created L0@166 N·86 S·2KiB "n:\x00..ail,v2525934":"n:\xfa..ong,v2525942"
+12:34:05.614001 version@stat F·[3 1] S·429KiB[426KiB 3KiB] Sc·[0.75 0.00]
+12:34:05.742751 db@janitor F·6 G·0
+12:34:05.742770 db@open done T·264.871784ms
+12:34:05.746809 table@compaction L0·3 -> L1·1 S·429KiB Q·2525943
+12:34:05.804274 table@build created L1@169 N·101 S·3KiB "n:\x00..ver,v2525265":"version,v1"
+12:34:05.804351 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+12:34:05.893568 table@compaction committed F-3 S-426KiB Ke·0 D·71257 T·146.704085ms
+12:34:05.893996 table@remove removed @166
+12:34:05.894167 table@remove removed @165
+12:34:05.894287 table@remove removed @161
+12:34:05.894344 table@remove removed @160
+12:53:45.973443 memdb@flush N·44058 S·3MiB
+12:53:46.024043 memdb@flush created L0@171 N·44058 S·262KiB "n:\x00..ver,v2569564":"n:\xfa..ong,v2525965"
+12:53:46.024128 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+12:53:46.051929 memdb@flush committed F·1 T·78.423306ms
+12:53:46.052960 journal@remove removed @167
+13:13:34.584578 memdb@flush N·43990 S·3MiB
+13:13:34.653100 memdb@flush created L0@173 N·43990 S·262KiB "n:\x00..ver,v2613104":"n:\xfa..ong,v2570717"
+13:13:34.653192 version@stat F·[2 1] S·527KiB[524KiB 3KiB] Sc·[0.50 0.00]
+13:13:34.737933 memdb@flush committed F·1 T·153.288733ms
+13:13:34.738877 journal@remove removed @170
+13:13:40.588167 table@compaction L0·2 -> L1·1 S·527KiB Q·2614191
+13:13:40.654885 table@build created L1@174 N·101 S·3KiB "n:\x00..ver,v2613104":"version,v1"
+13:13:40.654936 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+13:13:40.737878 table@compaction committed F-2 S-524KiB Ke·0 D·88048 T·149.676073ms
+13:13:40.738144 table@remove removed @173
+13:13:40.738344 table@remove removed @171
+13:13:40.738400 table@remove removed @169
+13:34:45.821011 memdb@flush N·43884 S·3MiB
+13:34:45.885653 memdb@flush created L0@176 N·43884 S·262KiB "n:\x00..ver,v2657106":"n:\xfa..ong,v2614070"
+13:34:45.885742 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+13:34:45.913608 memdb@flush committed F·1 T·92.539093ms
+13:34:45.914516 journal@remove removed @172
+13:55:00.992618 memdb@flush N·43966 S·3MiB
+13:55:01.042907 memdb@flush created L0@178 N·43966 S·262KiB "n:\x00..ver,v2701095":"n:\xfa..ong,v2659301"
+13:55:01.043020 version@stat F·[2 1] S·528KiB[525KiB 3KiB] Sc·[0.50 0.00]
+13:55:01.069911 memdb@flush committed F·1 T·77.242968ms
+13:55:01.071057 journal@remove removed @175
+13:55:03.907947 table@compaction L0·2 -> L1·1 S·528KiB Q·2701980
+13:55:03.965475 table@build created L1@179 N·101 S·3KiB "n:\x00..ver,v2701095":"version,v1"
+13:55:03.965525 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+13:55:04.019436 table@compaction committed F-2 S-525KiB Ke·0 D·87850 T·111.458554ms
+13:55:04.019594 table@remove removed @178
+13:55:04.019686 table@remove removed @176
+13:55:04.019773 table@remove removed @174
+14:14:47.216955 memdb@flush N·43965 S·3MiB
+14:14:47.376213 memdb@flush created L0@181 N·43965 S·262KiB "n:\x00..ver,v2745473":"n:\xfa..ong,v2702277"
+14:14:47.376304 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+14:14:47.461746 memdb@flush committed F·1 T·244.739593ms
+14:14:47.462823 journal@remove removed @177
+14:35:34.179818 memdb@flush N·43938 S·3MiB
+14:35:34.233350 memdb@flush created L0@183 N·43938 S·263KiB "n:\x00..ver,v2787843":"n:\xfa..ong,v2746222"
+14:35:34.233441 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+14:35:34.255462 memdb@flush committed F·1 T·75.601359ms
+14:35:34.256425 journal@remove removed @180
+14:35:38.182480 table@compaction L0·2 -> L1·1 S·529KiB Q·2789910
+14:35:38.244312 table@build created L1@184 N·101 S·3KiB "n:\x00..ver,v2787843":"version,v1"
+14:35:38.244387 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+14:35:38.272319 table@compaction committed F-2 S-526KiB Ke·0 D·87903 T·89.807792ms
+14:35:38.272482 table@remove removed @183
+14:35:38.272622 table@remove removed @181
+14:35:38.272685 table@remove removed @179
+14:56:41.626395 memdb@flush N·43883 S·3MiB
+14:56:41.679765 memdb@flush created L0@186 N·43883 S·263KiB "n:\x00..ver,v2833448":"n:\xfa..ong,v2790599"
+14:56:41.679819 version@stat F·[1 1] S·266KiB[263KiB 3KiB] Sc·[0.25 0.00]
+14:56:41.707178 memdb@flush committed F·1 T·80.746452ms
+14:56:41.708222 journal@remove removed @182
+15:16:35.751110 memdb@flush N·43969 S·3MiB
+15:16:35.790121 memdb@flush created L0@188 N·43969 S·262KiB "n:\x00..ver,v2877570":"n:\xfa..ong,v2834154"
+15:16:35.790209 version@stat F·[2 1] S·529KiB[526KiB 3KiB] Sc·[0.50 0.00]
+15:16:35.818295 memdb@flush committed F·1 T·67.113304ms
+15:16:35.820157 journal@remove removed @185
+15:16:37.074493 table@compaction L0·2 -> L1·1 S·529KiB Q·2877612
+15:16:37.125557 table@build created L1@189 N·101 S·3KiB "n:\x00..ver,v2877570":"version,v1"
+15:16:37.125605 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+15:16:37.182133 table@compaction committed F-2 S-526KiB Ke·0 D·87852 T·107.612511ms
+15:16:37.182289 table@remove removed @188
+15:16:37.182419 table@remove removed @186
+15:16:37.182477 table@remove removed @184
+15:37:03.782085 memdb@flush N·43957 S·3MiB
+15:37:03.841388 memdb@flush created L0@191 N·43957 S·263KiB "n:\x00..ver,v2920713":"n:\xfa..ong,v2878507"
+15:37:03.841469 version@stat F·[1 1] S·267KiB[263KiB 3KiB] Sc·[0.25 0.00]
+15:37:03.896060 memdb@flush committed F·1 T·110.975073ms
+15:37:03.896928 journal@remove removed @187
+=============== Jan 29, 2026 (CST) ===============
+16:00:32.399441 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:00:32.424339 version@stat F·[1 1] S·267KiB[263KiB 3KiB] Sc·[0.25 0.00]
+16:00:32.424362 db@open opening
+16:00:32.424454 journal@recovery F·1
+16:00:32.424848 journal@recovery recovering @190
+16:00:32.571782 memdb@flush created L0@192 N·41005 S·248KiB "n:\x00..ver,v2962401":"n:\xfa..ong,v2921941"
+16:00:32.576585 version@stat F·[2 1] S·516KiB[512KiB 3KiB] Sc·[0.50 0.00]
+16:00:32.670965 db@janitor F·5 G·0
+16:00:32.670994 db@open done T·246.623ms
+16:00:32.687874 table@compaction L0·2 -> L1·1 S·516KiB Q·2962559
+16:00:32.783543 table@build created L1@195 N·101 S·3KiB "n:\x00..ver,v2962401":"version,v1"
+16:00:32.783630 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+16:00:32.886598 table@compaction committed F-2 S-512KiB Ke·0 D·84962 T·198.665939ms
+16:00:32.886809 table@remove removed @192
+16:00:32.886979 table@remove removed @191
+16:00:32.887069 table@remove removed @189
+16:20:25.855327 memdb@flush N·44056 S·3MiB
+16:20:25.906296 memdb@flush created L0@197 N·44056 S·262KiB "n:\x00..ver,v3005815":"n:\xfa..ong,v2963220"
+16:20:25.906368 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+16:20:25.961252 memdb@flush committed F·1 T·105.877404ms
+16:20:25.962623 journal@remove removed @193
+=============== Jan 29, 2026 (CST) ===============
+16:26:15.195477 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:26:15.195662 version@stat F·[1 1] S·265KiB[262KiB 3KiB] Sc·[0.25 0.00]
+16:26:15.195672 db@open opening
+16:26:15.195731 journal@recovery F·1
+16:26:15.200446 journal@recovery recovering @196
+16:26:15.289929 memdb@flush created L0@198 N·11399 S·72KiB "n:\x00..ver,v3017877":"n:\xfa..ong,v3007589"
+16:26:15.290482 version@stat F·[2 1] S·338KiB[335KiB 3KiB] Sc·[0.50 0.00]
+16:26:15.490174 db@janitor F·5 G·0
+16:26:15.490197 db@open done T·294.519122ms
+16:26:15.493135 table@compaction L0·2 -> L1·1 S·338KiB Q·3018015
+16:26:15.624785 table@build created L1@201 N·101 S·3KiB "n:\x00..ver,v3017877":"version,v1"
+16:26:15.624844 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+16:26:15.735406 table@compaction committed F-2 S-334KiB Ke·0 D·55455 T·242.227838ms
+16:26:15.735679 table@remove removed @198
+16:26:15.735835 table@remove removed @197
+16:26:15.735891 table@remove removed @195
