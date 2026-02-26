@@ -4,9 +4,9 @@ do
   echo ${index} ${nodeKey}
 
   	if [ ${index} -lt 10 ];then
-		cp ../conf/grpConf/groupInfo.json ../nodes/'n0'${index}/data/groupInfo.json
+		cp ../conf/groupInfo.json ../nodes/'n0'${index}/data/groupInfo.json
 	else
-		cp ../conf/grpConf/groupInfo.json ../nodes/'n'${index}/data/groupInfo.json
+		cp ../conf/groupInfo.json ../nodes/'n'${index}/data/groupInfo.json
 	fi
   ((index++))
 done
