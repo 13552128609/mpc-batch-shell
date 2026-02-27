@@ -19,11 +19,25 @@ var BATCH = 5
 
 const argv = process.argv;
 
+function usageAndExit() {
+	console.error('Usage: node sign.js <NUM> <BATCH> <pk> <curve> <alg>');
+	process.exit(1);
+}
+
 async function main() {
-	console.log(argv[2])
-	console.log(argv[3])
+	if (argv.length < 7) {
+		usageAndExit()
+	}
+
 	NUM = parseInt(argv[2])
-	BATCH=parseInt(argv[3])
+	BATCH = parseInt(argv[3])
+	const pk = argv[4]
+	const curve = argv[5]
+	const alg = argv[6]
+
+	if (!Number.isFinite(NUM) || !Number.isFinite(BATCH) || !pk || !curve || !alg) {
+		usageAndExit()
+	}
 
 	let signDataS = []
 	for (let i = 0; i < NUM; i++) {
@@ -34,9 +48,9 @@ async function main() {
 			hashData = conf.hashData
 		}
 		let signData = {
-			pk: conf.pk,
-			curve: conf.curve,
-			alg: conf.alg,
+			pk,
+			curve,
+			alg,
 			hashData: [hashData],
 			rawData: [conf.rawData],
 			extern: conf.extern,
@@ -86,3 +100,8 @@ async function sleep(time) {
 
 
 main()
+
+// node sign.js 5 5 0x0293b298cc0f913f47dcb1a4e505f3baf1c859d62306f81e18d4ecd07a1e25862e7fb440fd6d54daab96a32cd2e9d2c8d7c7428e926633a5195ddfa79b0173ab 0x01 0x01
+// node sign.js 5 5 0x5b983948cc5ac7e7c86f8befb4a4ac551dede33d3026ebc7558d45264a21b583ff3ff0797071dda8dfea85288a8f53a6040819b992684cc2a6a7422803d2db07 0x00 0x00
+// node sign.js 5 5 0x5e3d7446ae8be69ac15941f82243a776b87868f52e6e99bd8050fbe3f5a4b48f07df1e4149f5ccdadf32334efdee740e449f585c1817ace1034890c467dc6d80 0x00 0x01
+// node sign.js 5 5 0x5e3d7446ae8be69ac15941f82243a776b87868f52e6e99bd8050fbe3f5a4b48f07df1e4149f5ccdadf32334efdee740e449f585c1817ace1034890c467dc6d80 0x00 0x02
