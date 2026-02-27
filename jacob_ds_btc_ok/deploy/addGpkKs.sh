@@ -12,7 +12,7 @@ if [ ${#gpk} -gt 130 ]; then
     gpk="0x"${gpk:4}
 fi
 
-for nodeKey  in $(cat ../conf/grpConf/nodeKeyList|awk '{print $1}')
+for nodeKey  in $(cat ../conf/grpElem/nodeKeyList|awk '{print $1}')
 do 
   echo ${index} ${nodeKey}
 

@@ -1,6 +1,6 @@
 index=1
 
-for nodeKey  in $(cat ../conf/grpConf/nodeKeyList|awk '{print $1}')
+for nodeKey  in $(cat ../conf/grpElem/nodeKeyList|awk '{print $1}')
 do 
   	if [ ${index} -lt 10 ];then
 		p2pPort=3000${index}

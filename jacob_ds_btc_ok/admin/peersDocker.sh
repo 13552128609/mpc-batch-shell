@@ -7,7 +7,7 @@ loglevel=3
 
 ROOTPATH="/home/ubuntu/mpc-batch-shell/jacob_ds_btc_ok/"
 
-for nodeKey  in $(cat ../conf/grpConf/nodeKeyList|awk '{print $1}')
+for nodeKey  in $(cat ../conf/grpElem/nodeKeyList|awk '{print $1}')
 do
         if [ ${index} -lt 10 ];then
                 p2pPort=3000${index}
