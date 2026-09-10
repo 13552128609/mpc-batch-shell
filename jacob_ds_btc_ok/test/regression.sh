@@ -58,8 +58,17 @@ for item in "${CASES[@]}"; do
     name="${item%%:*}"
     ret="${item##*:}"
 
+    # 如果日志里出现 error（不区分大小写），将 ret 置为非 0
+    if [ -f "out/$name.log" ] && grep -qi 'error' "out/$name.log"; then
+        ret=1
+    fi
+
     printf '\n---------------- %s (exit=%d) ----------------\n' "$name" "$ret"
-    cat "out/$name.log"
+
+    # 替代 cat：打印全部日志，并把 error 高亮为红色
+    # 'error|$' 的作用是让每一行都匹配，从而输出完整日志
+    GREP_COLORS='ms=01;31' grep --color=always -i -E 'error|$' "out/$name.log"
+
     rm -f "out/$name.log"
 
     if [ "$ret" -ne 0 ]; then
